@@ -33,7 +33,7 @@ export default function Page() {
       const[Data,setData] =useState([]);
       const [massage,setMassage]=useState('');
       const[title,setTitle]=useState('');
-      const[imurl,setImurl]=useState();
+      const[imurl,setImurl]=useState(');
       
       async function fetchData(): Promise<DataItem[]> {
         const response = await fetch('https://gorgeous-agreement-c4bde3ef88.strapiapp.com/api/articles?populate=*');
@@ -63,7 +63,7 @@ export default function Page() {
         
          setMassage(des);
          
-          setImurl(imgUrl);
+          setImurl(imgUrl!);
       }
        
             
